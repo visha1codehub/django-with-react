@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+  width: 100%; /* Ensuring button takes the full width of the parent */
+}
+
+button:hover {
+  border-color: #646cff;
+  background-color: #2e2e2e;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Dark Mode (Tailwind handles this automatically if you use dark classes) */
+.dark {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.dark button {
+  background-color: #1a1a1a;
+}
+
+.dark a {
+  color: #646cff;
+}
+
+.dark a:hover {
+  color: #535bf2;
+}
+
+/* Adjust width of form input fields and cards */
+.card, .new-item, .item-card {
+  max-width: 800px; /* Increase max-width for boxes */
+  width: 100%; /* Make sure the element takes the full width of its parent */
+}
+
+.input-field, .textarea-field {
+  width: 100%; /* Ensure the form elements are full width */
+  max-width: 100%; /* Ensuring it doesn't exceed the container */
+  padding: 1em;
+  font-size: 1.1em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Customize card width for better layout */
+.card, .items-list {
+  width: 100%;
+  max-width: 900px; /* Increase max-width of item cards */
+}
+
+:root {
+  --container-lg: 50rem;
+}
+
+
+
+/* Custom Toastify styles */
+.Toastify__toast-container {
+  top: 1rem; /* Set the top distance */
+  right: 1rem; /* Set the right distance */
+}
+
+.Toastify__toast {
+  background-color: #2d3748; /* Dark background */
+  color: #ffffff; /* White text */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  padding: 12px 20px; /* Padding around text */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+  border: 1px solid #4fd1c5; /* Neon border */
+}
+
+.Toastify__toast--success {
+  background-color: #104c46; /* Neon Green for success */
+  border: 1px solid #1d3c3a; /* Slightly darker green border */
+}
+
+.Toastify__toast--error {
+  background-color: #e53e3e; /* Neon Red for error */
+  border: 1px solid #c53030; /* Slightly darker red border */
+}
+
+.Toastify__toast--info {
+  background-color: #3182ce; /* Neon Blue for info */
+  border: 1px solid #2b6cb0; /* Slightly darker blue border */
+}
+
+.Toastify__toast--default {
+  background-color: #2d3748; /* Default dark background */
+}
+
+/* Make sure the toast container respects the dark theme */
+.Toastify__toast-container.Toastify__toast-container--top-right {
+  background-color: transparent; /* Transparent background */
+}
